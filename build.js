@@ -4,7 +4,7 @@ const ejs = require('ejs');
 
 // ── Paths ───────────────────────────────────────────────────────────────────
 const ROOT = path.resolve(__dirname, '..');
-const DIST = path.join(__dirname, 'dist');
+const DIST = path.join(__dirname, 'docs');
 const TEMPLATES = path.join(__dirname, 'templates');
 const DATA_DIR = path.join(ROOT, 'data');
 const STATIC_SRC = path.join(ROOT, 'web', 'static');
@@ -162,4 +162,4 @@ if (fs.existsSync(faviconSrc)) {
     console.log('  -> favicon.svg');
 }
 
-console.log('\nBuild complete! Output in Build/dist/');
+console.log('\nBuild complete! Output in docs/');

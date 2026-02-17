@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C /c/Codes/GitKraken/canberkbekiroglu-portfolio remote -v)",
+      "Bash(git -C /c/Codes/GitKraken/canberkbekiroglu-portfolio ls-files dist/)",
+      "Bash(gh api:*)",
+      "Bash(git mv:*)"
+    ]
+  }
+}
