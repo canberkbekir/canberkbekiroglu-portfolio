@@ -3,7 +3,7 @@ const path = require('path');
 const ejs = require('ejs');
 
 // ── Paths ───────────────────────────────────────────────────────────────────
-const ROOT = path.resolve(__dirname, '..');
+const ROOT = __dirname;
 const DIST = path.join(__dirname, 'docs');
 const TEMPLATES = path.join(__dirname, 'templates');
 const DATA_DIR = path.join(ROOT, 'data');
@@ -29,11 +29,9 @@ function copyDirSync(src, dest) {
 }
 
 function rootPrefix(depth) {
-    // For web server deployment, use empty string (absolute paths like /static/...)
-    // For local file:// testing, uncomment the relative version below:
-    // if (depth === 0) return '.';
-    // return Array(depth).fill('..').join('/');
-    return '';
+    // Base path for GitHub Pages (e.g. '/canberkbekiroglu-portfolio')
+    // Set to '' for custom domain hosting at root
+    return '/canberkbekiroglu-portfolio';
 }
 
 function renderPage(templateFile, data) {
