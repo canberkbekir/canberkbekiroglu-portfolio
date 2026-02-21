@@ -12,7 +12,8 @@
       "Bash(cmd.exe /c \"node build.js 2>&1\")",
       "Bash(powershell.exe -Command \"cd ''C:\\\\Codes\\\\GitKraken\\\\canberkbekiroglu-portfolio''; node build.js 2>&1\")",
       "Bash(powershell.exe -Command \"Get-Command node -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Source; if \\(-not $?\\) { ls ''C:\\\\Program Files\\\\nodejs\\\\'' -ErrorAction SilentlyContinue; ls $env:APPDATA\\\\nvm -ErrorAction SilentlyContinue }\")",
-      "Bash(powershell.exe -Command \"Get-ChildItem ''C:\\\\Program Files\\\\nodejs\\\\'' -ErrorAction SilentlyContinue\")"
+      "Bash(powershell.exe -Command \"Get-ChildItem ''C:\\\\Program Files\\\\nodejs\\\\'' -ErrorAction SilentlyContinue\")",
+      "Bash(cd:*)"
     ]
   }
 }

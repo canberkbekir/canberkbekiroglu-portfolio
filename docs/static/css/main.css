@@ -893,4 +893,5 @@ main {
     .portfolio-content { padding: 0 16px; }
     .nav-inner { padding: 0 16px; }
     .sidebar-name { font-size: 2rem; }
+    .nav-logo-text { display: none; }
 }
