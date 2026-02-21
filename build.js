@@ -31,7 +31,7 @@ function copyDirSync(src, dest) {
 function rootPrefix(depth) {
     // Base path for GitHub Pages (e.g. '/canberkbekiroglu-portfolio')
     // Set to '' for custom domain hosting at root
-    return '/canberkbekiroglu-portfolio';
+    return '';
 }
 
 function renderPage(templateFile, data) {
@@ -159,5 +159,9 @@ if (fs.existsSync(faviconSrc)) {
     fs.copyFileSync(faviconSrc, path.join(DIST, 'favicon.svg'));
     console.log('  -> favicon.svg');
 }
+
+// Write CNAME for custom domain
+fs.writeFileSync(path.join(DIST, 'CNAME'), 'canberkbekiroglu.com', 'utf8');
+console.log('  -> CNAME');
 
 console.log('\nBuild complete! Output in docs/');
